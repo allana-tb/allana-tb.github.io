@@ -4,12 +4,13 @@
 window.onscroll = function() {scrollfunction()};
 
  function scrollfunction() {
-     if (document.body.scrollTop > 80 ||
-        document.socumentElement.scrollTop > 80) {
+     if (document.body.scrollTop >= 250 ||
+        document.socumentElement.scrollTop >= 250) {
+            document.getElementById("home").style.fontSize = "90px";
+        } else {
             document.getElementById("home").style.fontSize = "45px";
             document.getElementById("home").style.display = "flex";
             document.getElementById("home").style.flex = "50%";
-        } else {
-            document.getElementById("home").style.fontSize = "90px";
+            removeClass('home__subtitle');
         }
  }
