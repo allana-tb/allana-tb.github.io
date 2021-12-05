@@ -11,7 +11,7 @@
     --hue-color: rgba(15, 6, 29, 1);
 
     --first-color: ;
-    --body-color: #FFF;
+    --body-color: rgba(30, 13, 58, 0.726);
     --container-color: rgba(30, 13, 58, 0.726);
 
     /* ------------ Font and typography --------------------*/
@@ -26,10 +26,24 @@
 
 h1{
 	padding-top: 20px;
-	color: rgb(250, 250, 250);
+	color: rgb(56, 214, 219);
+    font-weight: bolder;
 	position: flex;
 	float: center;
-	font-family: Montserrat;
+	font-family: Roboto;
+}
+
+main{
+    background-color: rgba(15, 6, 29, 1);
+}
+
+header{
+    background-color: rgba(15, 6, 29, 1)
+}
+
+#github{
+    position: flex;
+    float: center;
 }
 
 .btn-primary { background-color: rgb(255, 255, 255); }
