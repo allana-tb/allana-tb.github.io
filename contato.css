@@ -38,6 +38,7 @@
   .background {
     display: flex;
     min-height: 100vh;
+    background: rgba(15, 6, 29, 1);
   }
   
   .container {
@@ -134,6 +135,12 @@
     color: #b724db;
     font-size: 26px;
   }
+
+  .icon{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
   
   .app-title:after {
     content: '';
@@ -144,12 +151,6 @@
     width: 25px;
     height: 4px;
     background: #b724db;
-  }
-  
-  .app-contact {
-    margin-top: auto;
-    font-size: 8px;
-    color: #888;
   }
   
   .app-form-group {
