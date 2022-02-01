@@ -1,7 +1,7 @@
 /* ================== GOOGLE FONTS ===================*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
 
 /*============== VARIABLES CSS =======================*/
@@ -36,14 +36,12 @@
 }
 
 
-.home__title {
+.abt__me {
     width: 10ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
-    font-family: Roboto;
-    font-size: 80px;
   }
   
   @keyframes typing {
@@ -67,29 +65,25 @@ h1{
     color: #fff;
     text-shadow: 0 0 5px rgb(146, 74, 240), 0 0 10px rgba(136, 35, 231, 0.685), 0 0 15px #29116d, 0 0 20px #240b53, 0 0 25px #1b0733;
     transition: 0.2s;
+    font-family: Roboto;
+    font-size: 80px;
 }
 
 
-p{
+h2{
     font-family: Roboto;
-    text-decoration: line-through;
     font-size: 25px;
-    color: rgba(129, 126, 126, 0.219);
+    color: rgb(223, 158, 255);
     align-content: center;
 }
 
 
 
 h3{
-  font-family: Roboto Mono;
-  font-size: 15px;
-  text-align: justify;
-  line-height: 29px;
+  font-family: Roboto;
+  font-size: 25px;
   color: rgb(223, 158, 255);
-  position: sticky;
-  padding-left: 50%;
-  padding-right: 5%;
-  padding-bottom: 5%;
+  
 }
 
 
