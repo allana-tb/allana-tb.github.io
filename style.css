@@ -41,16 +41,16 @@
   margin: 0px 30px;
 }
 
-
-.home__container{
-  position: sticky;
-  position:-webkit-sticky;
-	vertical-align: middle;
-}
-
 .home__data{
+  display: block;
+  justify-content: center;
+  align-items: center;
   align-content: center;
-  padding: 15%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 
@@ -97,6 +97,7 @@ h3{
   font-family: Roboto;
   font-size: 25px;
   color: rgb(255, 255, 255);
+  align-content: center;
 }
 
 
