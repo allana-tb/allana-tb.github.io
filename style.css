@@ -41,22 +41,11 @@
   margin: 0px 30px;
 }
 
-.home__data{
-  display: block;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
 
-.abt__me {
-    width: 20ch;
-    animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+.home__title {
+    width: 10ch;
+    animation: typing 2s steps(13), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
@@ -86,19 +75,13 @@ h1{
 
 
 h2{
-    font-family: Roboto;
-    font-size: 50px;
-    color: rgb(255, 255, 255);
+    font-family: Roboto Mono;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(208, 145, 238);
     align-content: center;
 }
 
-
-h3{
-  font-family: Roboto;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-  align-content: center;
-}
 
 
 
