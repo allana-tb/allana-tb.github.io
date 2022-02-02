@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
+/* Color palette: fundo #0F061D  lilás #BEB7D1 mais int #9581EB  verde #00A985   branco quente #FFFADE branco frio #FCF7FF*/
+
 
 /*============== VARIABLES CSS =======================*/
 :root {
@@ -18,6 +20,10 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .nav {
 	position: sticky;
 	display: flex;
@@ -25,8 +31,9 @@
 	align-items: center;
 	height: 60px;
 	top: 0;
-	background: #42375327;
+	background: #180c2b;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .nav__link {
@@ -41,7 +48,15 @@
   margin: 0px 30px;
 }
 
+.home__all{
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.home__data{
+  padding: 20px;
+  flex: 40%
+}
 
 .home__title {
     width: 10ch;
@@ -49,6 +64,7 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
+    z-index: 5;
   }
   
   @keyframes typing {
@@ -66,7 +82,7 @@
   
 h1{
     font-weight: bold;
-    color: #fff;
+    color: #FFFADE;
     text-shadow: 0 0 5px rgb(194, 151, 250), 0 0 10px rgba(136, 35, 231, 0.685), 0 0 20px #240b53, 0 0 25px #1b0733;
     transition: 0.2s;
     font-family: Roboto;
@@ -74,9 +90,15 @@ h1{
 }
 
 
-h2{
+.text1{
+  position: fixed;
+  padding: 20px;
+  flex: 60%;
+}
+
+p{
     font-family: Roboto Mono;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     color: rgb(208, 145, 238);
     align-content: center;
