@@ -178,7 +178,13 @@ p{
     text-align: justify;
 }
 
+p a{
+  color: #BEB7D1;
+}
 
+p a:hover{
+  color: #FFFADE;
+}
 
 
 
