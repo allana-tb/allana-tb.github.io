@@ -48,14 +48,8 @@
   margin: 0px 30px;
 }
 
-.home__all{
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .home__data{
   padding: 20px;
-  flex: 40%
 }
 
 .home__title {
@@ -64,7 +58,6 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
-    z-index: 5;
   }
   
   @keyframes typing {
@@ -91,16 +84,14 @@ h1{
 
 
 .text1{
-  position: fixed;
   padding: 20px;
-  flex: 60%;
 }
 
 p{
     font-family: Roboto Mono;
     font-size: 16px;
     line-height: 30px;
-    color: rgb(208, 145, 238);
+    color: #BEB7D1;
     align-content: center;
 }
 
