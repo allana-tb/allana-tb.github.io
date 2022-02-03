@@ -146,3 +146,12 @@ var count_particles, stats, update; stats = new Stats;
                 requestAnimationFrame(update); 
             };
              requestAnimationFrame(update);;
+
+
+
+ $(function() {
+    $('.scroll-down').click (function() {
+      $('html, body').animate({scrollTop: $('section.timeline').offset().top }, 'slow');
+      return false;
+    });
+  });
