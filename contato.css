@@ -64,7 +64,7 @@
     right: 20px;
     bottom: 0;
     border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(161, 46, 206, 0.4);
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.377);
     z-index: -1;
   }
   
@@ -124,7 +124,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    color: #b724db;
+    color: #FFFADE;
     font-size: 26px;
     padding-bottom: 5px;
   }
@@ -141,9 +141,9 @@
     position: absolute;
     left: 0;
     bottom: -10px;
-    width: 50px;
+    width: 117px;
     height: 4px;
-    background: #b724db;
+    background: #FFFADE;
   }
   
   .app-form-group {
@@ -183,14 +183,14 @@
   .app-form-button {
     background: none;
     border: none;
-    color: #b724db;
+    color: #e4572e;
     font-size: 14px;
     cursor: pointer;
     outline: none;
   }
   
   .app-form-button:hover {
-    color: rgb(56, 214, 219);
+    color: #00A985;
     ;
   }
   
