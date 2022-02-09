@@ -21,9 +21,11 @@ onReady(function () {
 
 //= require particles
 
-particlesJS.load('particles', 'JS/particles.json', function() {
-  console.log('callback - main.js config loaded');
-});
+  window.onload = function() {
+    particlesJS.load('particles', 'JS/particles.json', function() {
+        console.log('callback - main.js config loaded');
+      });
+  };
 
 var count_particles, stats, update; stats = new Stats;
  stats.setMode(0);
