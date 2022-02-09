@@ -20,9 +20,9 @@ onReady(function () {
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'JS/particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+particlesJS.load('particles', 'JS/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
 
 var count_particles, stats, update; stats = new Stats;
  stats.setMode(0);
