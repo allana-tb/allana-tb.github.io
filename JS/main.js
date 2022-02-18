@@ -23,7 +23,7 @@ onReady(function () {
 
   window.onload = function() {
     particlesJS.load('particles', 'JS/particles.json', function() {
-        console.log('callback - main.js config loaded');
+        console.log('callback - particles.js config loaded');
       });
   };
 
