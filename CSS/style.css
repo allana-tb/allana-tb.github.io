@@ -98,7 +98,8 @@
   display: flex;
   display: -ms-flexbox;
   flex-wrap: wrap;
-  -ms-flex-wrap: wrap;  
+  -ms-flex-wrap: wrap;
+  position: absolute;  
 }
 
 .home__data{
@@ -152,6 +153,10 @@
     top: 10%;
   }
 
+  h1{
+    left: 15px;
+  }
+
 }
 
 .home__data, .text1{
@@ -166,8 +171,8 @@ h1{
     transition: 0.2s;
     font-family: Roboto;
     font-size: 80px;
-    text-align: center;
     position: fixed;
+    margin-left: 10px;
 }
 
 p{
