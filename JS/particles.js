@@ -1524,7 +1524,7 @@ window.particlesJS.load = function(tag_id, path_config_json, callback){
 
   /* load json config */
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', path_config_json);
+  xhr.open('GET', JS/particles.JSON);
   xhr.onreadystatechange = function (data) {
     if(xhr.readyState == 4){
       if(xhr.status == 200){
