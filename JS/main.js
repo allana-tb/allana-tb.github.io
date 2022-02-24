@@ -1,16 +1,4 @@
 
- function onReady(callback) {
-    var intervalID = window.setInterval(checkReady, 1000);
-
-    function checkReady() {
-        if (document.getElementsByTagName('body')[0] !== undefined) {
-            window.clearInterval(intervalID);
-            callback.call(this);
-        }
-    }
-}
-
-//= require particles
 
 tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
     // p is the loaded container, for using it later
@@ -18,13 +6,13 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
   });
   
   var p = tsParticles.load('particles-js', { 
-    fpsLimit: 60,
+    fpsLimit: 65,
     particles: {
         number: {
-          value: 85,
+          value: 150,
           density: {
             enable: true,
-            value_area: 800
+            area: 800
           }
         },
         color: {
@@ -37,37 +25,32 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
             color: '#000000'
           },
           polygon: {
-            nb_sides: 5
+            nbSides: 5
           },
-          image: {
-            src: '',
-            width: 100,
-            height: 100
-          }
         },
         opacity: {
           value: 0.5,
           random: false,
-          anim: {
+          animation: {
             enable: true,
             speed: 1,
-            opacity_min: 0.1,
+            minimumValue: 0.1,
             sync: false
           }
         },
         size: {
-          value: 12.02559045649142,
+          value: 15,
           random: true,
-          anim: {
+          animation: {
             enable: false,
             speed: 26.79854800594439,
-            size_min: 0.1,
+            sizeMin: 0.5,
             sync: false
           }
         },
-        line_linked: {
+        lineLinked: {
           enable: true,
-          distance: 150,
+          distance: 100,
           color: '#beb7d1',
           opacity: 0.4,
           width: 1
@@ -78,7 +61,7 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
           direction: 'none',
           random: false,
           straight: false,
-          out_mode: 'out',
+          outMode: 'out',
           bounce: false,
           attract: {
             enable: true,
@@ -88,13 +71,13 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
         },
       },
       interactivity: {
-        detect_on: 'canvas',
+        detectsOn: 'canvas',
         events: {
-          onhover: {
+          onHover: {
             enable: true,
             mode: 'repulse'
           },
-          onclick: {
+          onClick: {
             enable: true,
             mode: 'push'
           },
@@ -103,7 +86,7 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
         modes: {
           grab:{
             distance: 400,
-            line_linked:{
+            lineLinked:{
               opacity: 1
             }
           },
@@ -119,15 +102,15 @@ tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
             duration: 0.4
           },
           push:{
-            particles_nb: 4
+            quantity: 4
           },
           remove:{
-            particles_nb: 2
+            quantity: 2
           }
         },
         mouse:{}
       },
-      retina_detect: true,
+      detectsRetina: true,
   }); // p is the loaded container, for using it later
 
 
