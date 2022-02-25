@@ -26,6 +26,7 @@
 
 .nav {
 	position: sticky;
+  position: -webkit-sticky;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -33,6 +34,7 @@
 	top: 10px;
 	background: #180c2b;
   border-radius: 10px;
+  z-index: 500;
 }
 
 .nav__link {

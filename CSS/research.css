@@ -208,6 +208,10 @@ h1{
     color: #FCF7FF;
 }
 
+.r__subtitle{
+  margin-top: 5rem;
+}
+
 .timeline:before {
   content: '';
   position: absolute;
@@ -315,7 +319,6 @@ h2{
     font-size: 40px;
     color: #FFFADE;
     align-content: center;
-    margin-top: 5rem;
 }
 
 .rtext{
