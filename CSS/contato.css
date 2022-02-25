@@ -353,5 +353,7 @@ header{
 
 .btn-primary { background-color: rgb(255, 255, 255); }
 
-
+#linkedin:hover{
+  color: #d091f0;
+}
 

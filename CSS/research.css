@@ -209,7 +209,8 @@ h1{
 }
 
 .r__subtitle{
-  margin-top: 5rem;
+  margin-top: 10rem;
+  padding-left: 2rem;
 }
 
 .timeline:before {
