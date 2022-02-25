@@ -315,6 +315,7 @@ h2{
     font-size: 40px;
     color: #FFFADE;
     align-content: center;
+    margin-top: 5rem;
 }
 
 .rtext{
@@ -336,7 +337,7 @@ h2{
   border-radius: 30px;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  margin: 18px;
   width: 20px;
   border: none;
   text-align: left;
@@ -344,15 +345,29 @@ h2{
   font-size: 20px;
 }
 
-.active, .collapsible:hover {
+.bi-plus-circle:hover {
   background-color: rgb(252, 252, 252);
+  color: #180c2b;
+  border-radius: 50px;
+  border: none;
 }
+
+
+.bi-plus-circle:focus {
+  background-color: rgb(252, 252, 252);
+  color: #180c2b;
+  border-radius: 50px;
+  transition: .3s transform ease-in-out;
+  transform: rotate(-15deg);
+ }
 
 .col__content {
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #180c2b;
+  text-align: justify;
+  color: #BEB7D1;
 }
 
 
