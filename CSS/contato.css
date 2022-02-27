@@ -228,6 +228,8 @@
   
   .app-form-group.message {
     margin-top: 40px;
+    height: auto;
+    overflow-wrap: break-word;
   }
   
   .app-form-group.buttons {
@@ -243,10 +245,10 @@
     border-bottom: 1px solid #666;
     color: #ddd;
     font-size: 14px;
-    text-transform: uppercase;
+    font-family: Roboto Mono;
     outline: none;
     transition: border-color .2s;
-  }
+}
   
   .app-form-control::placeholder {
     color: #666;
@@ -266,7 +268,7 @@
   }
   
   .app-form-button:hover {
-    color: #00A985;
+    color: #d091f0;
     ;
   }
   
@@ -331,8 +333,8 @@
 h1{
 	padding-top: 20px;
 	color: rgb(56, 214, 219);
-    font-size: 15px;
-    font-weight: bolder;
+  font-size: 15px;
+  font-weight: bolder;
 	position: flex;
 	float: center;
 	font-family: Roboto Mono;
@@ -351,9 +353,22 @@ header{
     float: center;
 }
 
-.btn-primary { background-color: rgb(255, 255, 255); }
-
-#linkedin:hover{
-  color: #d091f0;
+.btn-primary { 
+  background-color: rgb(255, 255, 255); 
 }
 
+#linkedin{
+  color: #0072b1;
+}
+
+#github{
+  color: #000000;
+}
+
+#email{
+  color: grey;
+}
+
+#github:hover, #linkedin:hover, #email:hover{
+  color: #d091f0;
+}

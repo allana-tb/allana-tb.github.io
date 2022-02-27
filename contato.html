@@ -38,27 +38,27 @@
                     <span>ME AT:</span>
                   </div>
                   <div id="nets" class="icon" style="font-size:xx-large; padding-top: 50px; letter-spacing: 10px; ">
-                    <a id = "linkedin" style="color: #0072b1;" href="https://www.linkedin.com/in/allanatavares/"><i class="bi bi-linkedin"></i></a><br>
-                    <a id = "github" style="color: #000000;" href="https://github.com/allana-tb"><i class="bi bi-github"></i></a><br>
-                    <a id = "email" style="color: grey;" href="mailto:allanatavaresb@gmail.com"><i class="bi bi-envelope-fill"></i></a><br>
+                    <a id = "linkedin" href="https://www.linkedin.com/in/allanatavares/"><i class="bi bi-linkedin"></i></a><br>
+                    <a id = "github" href="https://github.com/allana-tb"><i class="bi bi-github"></i></a><br>
+                    <a id = "email" href="mailto:allanatavaresb@gmail.com"><i class="bi bi-envelope-fill"></i></a><br>
                   </div>
                 </div>
                 <div class="screen-body-item">
-                  <div class="app-form">
+                  <form action="http://formspree.io/allanatavaresb@gmail.com">
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="NAME">
+                      <input class="app-form-control" placeholder="NAME" name="name" id="name" type="text">
                     </div>
                     <div class="app-form-group">
-                      <input class="app-form-control" placeholder="EMAIL">
+                      <input class="app-form-control" placeholder="EMAIL" name="_replyto" id="email" type="email">
                     </div>
                     <div class="app-form-group message">
-                      <input class="app-form-control" placeholder="MESSAGE">
+                      <input class="app-form-control" placeholder="Write something here..." name="body" id="messsage" type="text">
                     </div>
                     <div class="app-form-group buttons">
-                      <button class="app-form-button">CANCEL</button>
-                      <button class="app-form-button">SEND</button>
+                      <button class="app-form-button" onclick="history.back()">CANCEL</button>
+                      <button class="app-form-button" type="submit" name="submit" value="send" >SEND</button>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
