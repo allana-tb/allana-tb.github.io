@@ -96,12 +96,14 @@
   opacity: 1;
 }
 
+
 .home__all{
   display: flex;
   display: -ms-flexbox;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  position: absolute;  
+  position: sticky;
+  position:-webkit-sticky;  
 }
 
 .home__data{
@@ -200,12 +202,14 @@ p a:hover{
 }
 
 .footer{
-  position: sticky;
+  position: relative;
   left: 1rem;
   bottom: 1rem;
   padding: 1rem;
+  margin-top: auto;
   width: 100%;
-  text-align: center;
+  align-content: center;
+  font-size: 10px;
 }
 
 
