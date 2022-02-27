@@ -103,7 +103,7 @@
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   position: sticky;
-  position:-webkit-sticky;  
+  position: -webkit-sticky;
 }
 
 .home__data{
