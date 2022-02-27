@@ -26,8 +26,8 @@
 
 .nav {
 	position: sticky;
-  position: -webkit-sticky;
 	display: flex;
+  display: -webkit-flex;
 	justify-content: space-between;
 	align-items: center;
 	height: 60px;
@@ -35,6 +35,7 @@
 	background: #180c2b;
   border-radius: 10px;
   z-index: 500;
+  box-shadow: 0 1px 5px 0 rgba(15, 6, 29, 1), 0 1px 5px 0 rgba(15, 6, 29, 1);
 }
 
 .nav__link {
