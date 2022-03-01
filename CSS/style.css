@@ -202,6 +202,164 @@ p a:hover{
   bottom: 25px;
 }
 
+
+.tcontainer {
+  max-width: 650px;
+  margin: 50px auto;
+}
+
+/*timeline style*/
+.timeline {
+    position: relative;
+    padding-left: 4rem;
+    margin: 0 0 0 30px;
+    color: #FCF7FF;
+}
+
+.r__subtitle{
+  margin-top: 10rem;
+  padding-left: 2rem;
+}
+
+.timeline:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #9581EB;
+}
+
+.timeline-container {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.timeline-body {
+    background: #180c2b;
+    border-radius: 10px;
+    padding: 20px 20px 15px;
+    box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.377);
+}
+
+.timeline-body:before {
+  content: '';
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+
+.timeline-title {
+  color: #FFFADE;
+  font-family: Roboto;
+  font-size: 17px;
+  letter-spacing: 1.1px;
+ }
+
+.timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: .4;
+  margin-top: 16px;
+  font-size: 11px;
+  color: #FCF7FF;
+}
+
+/* Current Timeline*/
+
+.timeline-current {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #9581EB;
+}
+
+/* NetSci Timeline*/
+.timeline-netsci {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #f81dc9;
+}
+
+/* PET Timeline*/
+.timeline-pet {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #1d8cf8;
+}
+
+/* First Timeline*/
+.timeline-first {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #e4572e;
+}
+
+h2{
+    font-family: Roboto;
+    font-size: 40px;
+    font-variant-caps: all-petite-caps;
+    color: #FFFADE;
+    align-content: center;
+    margin: 2rem;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px #240b53;
+}
+
+.rtext{
+  padding:100px;
+}
+
+.rtext p{
+  font-family: Roboto Mono;
+  font-size: 16px;
+  line-height: 30px;
+  color: #BEB7D1;
+  align-content: center;
+  text-align: justify;
+}
+
+.timeline-body p {
+  font-size: 14px;
+  color: #FCF7FF;
+}
+
+.uni{
+  font-family: Roboto Mono;
+  font-size: 16px;
+}
+
+
 .footer{
   position: relative;
   left: 1rem;
