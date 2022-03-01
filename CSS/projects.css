@@ -38,11 +38,12 @@
   box-shadow: 0 1px 5px 0 rgba(15, 6, 29, 1), 0 1px 5px 0 rgba(15, 6, 29, 1);
 }
 
-.nav__link {
+.nav__link a{
   margin: 0px 30px;
   vertical-align: middle;
   font-family: Dongle;
   font-size: 30px;
+  color: #BEB7D1;
 }
 
 .nav__item {
@@ -50,14 +51,6 @@
   text-align: center;
   margin: 0px 30px;
   padding: 2px;
-}
-
-.nav__link a{
-  margin: 0px 30px;
-  vertical-align: middle;
-  font-family: Dongle;
-  font-size: 30px;
-  color: #BEB7D1;
 }
 
 .nav__list * {
