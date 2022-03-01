@@ -42,7 +42,7 @@ html{
   box-shadow: 0 1px 5px 0 rgba(15, 6, 29, 1), 0 1px 5px 0 rgba(15, 6, 29, 1);
 }
 
-.nav__link a {
+.nav__link a{
   margin: 0px 30px;
   vertical-align: middle;
   font-family: Dongle;
@@ -95,7 +95,6 @@ html{
 .nav__item .current a {
   color: #FFFADE;
 }
-
 .nav__item a:hover:before,
 .nav__item .current a:before,
 .nav__item a:hover:after,
@@ -382,14 +381,19 @@ h2{
 
 p{
   font-family: Roboto Mono;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 26px;
   color: #BEB7D1;
   align-content: center;
   text-align: justify;
 }
 
-.footer{
+.timeline-body p {
+  font-size: 15px;
+  color: #FCF7FF;
+}
+
+.footer p{
   position: relative;
   left: 1rem;
   bottom: 1rem;
