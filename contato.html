@@ -44,21 +44,30 @@
                   </div>
                 </div>
                 <div class="screen-body-item">
-                  <form action="http://formspree.io/allanatavaresb@gmail.com">
-                    <div class="app-form-group">
-                      <input class="app-form-control" placeholder="NAME" name="name" id="name" type="text">
+                  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" 
+                  action="https://script.google.com/macros/s/AKfycbzt3SntANyCx1XLuNepEirbZfwceOy5Ox366sj1SKX93ZVEGJVBGQXFAkTRPZAZjJ9IeA/exec">
+                    <div class="form-elements">
+                      <input class="app-form-control" placeholder="YOUR NAME" name="name" id="name" type="text">
                     </div>
-                    <div class="app-form-group">
-                      <input class="app-form-control" placeholder="EMAIL" name="_replyto" id="email" type="email">
+                    <div class="form-elements">
+                      <input class="app-form-control" placeholder="YOUR EMAIL" name=email" id="email" type="email">
                     </div>
-                    <div class="app-form-group message">
-                      <input class="app-form-control" placeholder="Write something here..." name="body" id="messsage" type="text">
+                    <div class="form-elements">
+                      <textarea class="app-form-control" placeholder="Write something here..." name="message" id="messsage" type="text"></textarea>
                     </div>
                     <div class="app-form-group buttons">
                       <button class="app-form-button" onclick="history.back()">CANCEL</button>
                       <button class="app-form-button" type="submit" name="submit" value="send" >SEND</button>
                     </div>
+                    <div class="thankyou_message" style="display:none;">
+                      <h2>Thanks for the message!
+                        I will get back to you soon! :) </h2>
+                    </div>
                   </form>
+
+                  <!-- Submit the Form to Google Using "AJAX" -->
+                  <script data-cfasync="false" src="JS/form-submission-handler.js"></script>
+
                 </div>
               </div>
             </div>
