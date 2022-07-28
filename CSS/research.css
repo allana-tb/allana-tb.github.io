@@ -31,6 +31,11 @@
   -webkit-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+  scroll-behavior: smooth;
+}
+
+.container{
+  background: #0f061d;
 }
 
 .nav {
@@ -124,7 +129,11 @@
 
 @media screen and (max-width: 1140px) {
   .overlay__bg{
-    min-height: 60vh;
+    min-height: 1vh;
+  }
+
+  .r__subtitle{
+    margin-top: 1rem;
   }
 }
 
@@ -146,7 +155,9 @@ h1{
   padding-right: 10px;
 }
 
-
+#section2{
+  padding-top: 1rem;
+}
 
 .scroll-down {
   position: absolute;
