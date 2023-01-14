@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  background: #9581EB;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --bg-color: #0F061D;
+  --bg-shadow: #0F061D90;
+  --primary: #BEB7D1;
+  --main-text: #FFFADE;
+  --cold-text: #FCF7FF;
+  --highlight-green: #77AF7A;
+  --highlight-orange: #EE9479 /*B46F61 is darker but similar*/;
+  --container-color-light: #d2c59d;
+  
+}
+
+.light-mode{
+  --bg-color: #FFFADE;
+  --bg-shadow: #FCF7FF;
+  --primary: #BEB7D1;
+  --main-text: #0F061D;
+  --cold-text: #0F061D90;
+  --highlight-green: #77AF7A;
+  --highlight-orange: #EE9479 /*B46F61 is darker but similar*/;
+  --container-color-light: #d2c59d;
+  --container-color-dark: rgba(30, 13, 58, 0.726);
+
+}
