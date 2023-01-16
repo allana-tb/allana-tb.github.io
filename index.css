@@ -2,25 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
 
-html{
-  scroll-behavior: smooth;
-  background: #9581EB;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto,
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 :root{
+  color-scheme: dark;
   --bg-color: #0F061D;
   --bg-shadow: #0F061D90;
   --primary: #BEB7D1;
@@ -32,10 +15,11 @@ code {
   
 }
 
-.light-mode{
+[color-scheme = "light"]{
+  color-scheme: light;
   --bg-color: #FFFADE;
   --bg-shadow: #FCF7FF;
-  --primary: #BEB7D1;
+  --primary: #9581EB;
   --main-text: #0F061D;
   --cold-text: #0F061D90;
   --highlight-green: #77AF7A;
@@ -44,3 +28,152 @@ code {
   --container-color-dark: rgba(30, 13, 58, 0.726);
 
 }
+
+html{
+  scroll-behavior: smooth;
+  background: #9581EB;
+  height: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 6vh;
+}
+
+body {
+  margin: 0;
+  background: var(--bg-color);
+  font-family: Roboto;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: background 0.2s linear;
+}
+
+.body-wrap {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  left: 10px;
+  bottom: 10px;
+  background: var(--bg-color);
+  border-radius: 10px;
+  padding: 3vh;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #BEB7D1;
+  border-radius: 5px;
+}
+
+/* ===========================NAV============================ */
+
+.nav {
+	position: sticky;
+	display: flex;
+  display: -webkit-flex;
+	justify-content: space-between;
+	align-items: baseline;
+  vertical-align: middle;
+	height: 60px;
+	top: 10px;
+	background: var(--bg-color);
+  border-radius: 10px;
+  z-index: 500;
+  box-shadow: 0 1px 5px 0 rgba(15, 6, 29, 1), 0 1px 5px 0 rgba(15, 6, 29, 1);
+}
+
+.nav__link {
+  margin: 0px 30px;
+  font-family: Dongle;
+  font-size: 30px;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0px 30px;
+  padding: 1px;
+  border-width: 25px;
+}
+
+.nav__list * {
+  color: var(--primary);
+}
+
+.nav__item a:hover,
+.nav__item .current a {
+  color: var(--main-text);
+}
+
+.checkbox {
+  width: 50px;
+  height: 26px;
+  outline: hsl(from var(--bg-color) h s calc(l - 5%));
+  position: relative;
+  border-radius: 50px;
+  transition: 0.4s;
+  background: "moon-stars-fill.svg";
+}
+
+.label-checkbox {
+  
+  background-color:rgba(17, 17, 17, 0.315);
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the element after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.bi-moon-stars-fill {
+  color: var(--main-text);
+}
+
+.bi-brightness-high-fill {
+  color: yellow;
+}
+
+
+
+img {
+  --s: 10px; /* control the size */
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
+}
+
+
+
+
+
