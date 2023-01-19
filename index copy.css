@@ -5,7 +5,7 @@
 :root{
   color-scheme: dark;
   --bg-color: #0F061D;
-  --bg-shadow: rgba(30, 13, 57);
+  --bg-shadow: #0F061D90;
   --primary: #BEB7D1;
   --main-text: #FFFADE;
   --cold-text: #FCF7FF;
@@ -78,29 +78,19 @@ body {
 /* ===========================NAV============================ */
 
 .navbar {
-	background: var(--bg-shadow);
+	background: var(--highlight-orange);
   border-radius: 10px;
   z-index: 500;
   box-shadow: 0 1px 5px 0 rgba(15, 6, 29, 1), 0 1px 5px 0 rgba(15, 6, 29, 1);
-  position: sticky;
-  top: 0vh;
   display: flex;
+  display: -webkit-flex;
 	justify-content: space-between;
-  align-items: baseline;
-  vertical-align: middle;
 }
 
-.navbar-brand{
-  margin: 0px 2vh;
+.navbar-brand {
+  margin: 0px 30px;
   font-family: Dongle;
   font-size: 30px;
-}
-
-.nav-link {
-  padding-left: 10px;
-  font-family: Dongle;
-  font-size: 30px;
-
 }
 
 .nav-list {
@@ -111,21 +101,16 @@ body {
   display: inline-block;
   text-decoration: none;
   position: relative;
-  padding: 10px;
+  align-content: center;
+  padding: 1vh;
 }
 
-.nav-checkbox {
-  padding-top: 0vw;
-  padding-bottom: 0vw;
-  vertical-align: bottom;
-}
-
-.nav-item:hover,
+.nav-item li > a:hover,
 .nav-item .current a {
   color: var(--main-text);
 }
 
-.nav-item::before {
+.nav-item li > a::before {
   position: absolute;
   content: "";
   width: calc(100% - 1px);
@@ -154,7 +139,6 @@ body {
   -webkit-transform-origin: left center;
   -ms-transform-origin: left center;
   transform-origin: left center;
-  z-index: 1000;
 }
 
 .checkbox {
@@ -180,97 +164,19 @@ body {
 }
 
 
-/* =========================================INTRO======================================= */
-
-h1{
-  font-weight: bold;
-  color: #FFFADE;
-  text-shadow: 0 0 5px rgb(194, 151, 250), 0 0 10px rgba(136, 35, 231, 0.685), 0 0 20px #240b53, 0 0 25px #1b0733;
-  font-family: Roboto;
-  font-size: 7.5ch;
-  position: relative;
-  margin-left: 2rem;
+img {
+  --s: 10px; /* control the size */
+  display: block;
+  width: 80%;
+  object-fit: cover;
+  padding: var(--s);
+  border: calc(2*var(--s)) solid #0000;
+  outline: 1px solid #000;
+  outline-offset: calc(-1*var(--s));
+  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
 }
 
-p{
-  font-family: Roboto Mono;
-  font-size: medium;
-  line-height: 1.5rem;
-  color: #BEB7D1;
-  align-content: center;
-}
 
-#home{
-  display: flex;
-  flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  overflow: hidden;
-  padding-top: 15%;
-}
 
-.home-text{
-  flex: 40%;
-}
 
-.home-img{
-  flex: 50%;
-}
 
-@media screen and (max-width: 700) {
-  #home{
-    flex-direction: column;
-    padding: 10%;
-  }
-}
-
-.spin-container {
-  width: 40vh;
-  height: 60vw;
-  max-width: 360px;
-  max-height: 280px;
-  animation: spin 12s ease-in-out infinite alternate;
-}
-
-.shape {
-  width: 100%;
-  height: 100%;
-  transition: border-radius 1s ease-out;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: morph 8s ease-in-out infinite both alternate;
-  position: absolute;
-  overflow: hidden;
-  z-index: 5;
-}
-
-.bd {
-  width: 142%;
-  height: 142%;
-  position: absolute;
-  left: -21%;
-  top: -21%;
-  background: url("me.jpg") no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  animation: spin 12s ease-in-out infinite alternate-reverse;
-  opacity: 1;
-  z-index: 2;
-}
-
-.spin-container:hover {
-  box-shadow: 0 1px 5px var(--container-color-light);
-  border-radius: 50%;
-}
-
-@keyframes morph {
-  0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
-  100% {border-radius: 40% 60%;} 
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(1turn);
-  }
-}
