@@ -12,6 +12,8 @@
   --cold-text: #FCF7FF;
   --highlight-green: #77AF7A;
   --highlight-orange: #EE9479 /*B46F61 is darker but similar*/;
+  --highlight-blue: #87d5c0;
+  --highlight-pink: #e540ae;
   --container-color-light: #d2c59d;
   --linkedin-color: #00a0dc;
   --bt-icon: url("moon-stars-fill.svg");
@@ -28,6 +30,8 @@
   --cold-text: #0F061D90;
   --highlight-green: #77AF7A;
   --highlight-orange: #EE9479 /*B46F61 is darker but similar*/;
+  --highlight-blue: #87d5c0;
+  --highlight-pink: #e95ebb;
   --container-color-light: #d2c59d;
   --container-color-dark: rgba(30, 13, 58, 0.726);
   --linkedin-color: #0077b5;
@@ -273,7 +277,6 @@ p{
 .home-text{
   flex: 60%;
   align-content: center;
-
 }
 
 .home-img{
@@ -353,7 +356,13 @@ p{
   text-align: justify;
   width: 60vw;
   padding: 4vh;
+}
 
+@media screen and (max-width: 700) {
+  #about p{
+    padding-left: -100px;
+    overflow-wrap: break-word;
+  }
 }
 
 /*==================== SKILLS ====================================*/
@@ -376,22 +385,94 @@ p{
 
 #skills .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
-#skills .column {
+#skills .col {
   flex: 50%;
 }
 
-/*==================== RESEARCH ====================================*/
+@media screen and (max-width: 700) {
+  #skills .col{
+    flex: 100%;
+  }
+}
 
-#re-tt{
+
+/*================================ EDUCATION================================ */
+
+#education-tt{
   text-align: end;
 }
 
-#re-tt u::before{
-  background-color: var(--highlight-green);
+#education-tt u::before{
+  background-color: var(--highlight-pink);
 }
 
+#education .col{
+  text-align: start;
+
+}
+
+.collapsible {
+  background-color: var(--bg-color);
+  border-radius: 30px;
+  color: var(--cold-text);
+  cursor: pointer;
+  margin: 18px;
+  width: 20px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+.bi-plus-circle:hover {
+  background-color: var(--cold-text);
+  color: var(--bg-shadow);
+  border-radius: 50px;
+  border: none;
+}
+
+
+.bi-plus-circle:focus {
+  background-color: var(--cold-text);
+  color: var(--bg-shadow);
+  border-radius: 50px;
+  transition: .3s transform ease-in-out;
+  transform: rotate(-15deg);
+}
+
+.col__content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: var(--bg-shadow);
+  text-align: justify;
+  color: var(--primary);
+}
+
+
+/*==================== RESEARCH ====================================*/
+
+#research-tt{
+  text-align: start;
+}
+
+#research-tt u::before{
+  background-color: var(--highlight-blue);
+}
+
+
+/*==================== WORK ====================================*/
+
+#work-tt{
+  text-align: end;
+}
+
+#work-tt u::before{
+  background-color: #f9f87f;
+}
 
 
 
