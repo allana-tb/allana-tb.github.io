@@ -128,19 +128,28 @@
     -webkit-animation-play-state: paused;
     background-color: var(--main-text);
 }
-  
-.tcontainer {
-    max-width: 60vw;
-    margin: 50px auto;
+
+.tl{
+    display: flex;
+    flex-wrap: wrap;
 }
-  
-  /*timeline style*/
+
+.tl-col{
+    flex: 35%;
+    padding: 5vw;
+
+}
+
+.tcontainer {
+    padding-top: 7vh;
+}
+
 .timeline {
       position: relative;
       padding-left: 4rem;
       margin: 0 0 0 30px;
       color: var(--main-text);
-}
+    }
   
 .r__subtitle{
     margin-top: 10rem;
@@ -160,6 +169,7 @@
 .timeline-container {
       position: relative;
       margin-bottom: 2.5rem;
+      flex: 40%;
 }
   
 .timeline-body {
@@ -167,6 +177,7 @@
       border-radius: 10px;
       padding: 20px 20px 15px;
       box-shadow: var(--shadows);
+      max-width: 40vw;
 }
   
 .timeline-body:before {
@@ -179,12 +190,66 @@
     left: -10px;
     transform: rotate(45deg);
     border-radius: 0 0 0 2px;
+    box-shadow: var(--shadows);
+    z-index: -1;
 }
   
   
 .timeline-title {
     margin-bottom: 1.4rem;
     color: var(--main-text);
+}
+  
+.timeline-subtitle {
+    font-weight: 300;
+    font-style: italic;
+    opacity: .4;
+    margin-top: 16px;
+    font-size: 11px;
+    color: var(--main-text);
+}
+  
+
+.rtext{
+    padding:100px;
+  }
+  
+.rtext p{
+    font-family: Roboto Mono;
+    line-height: 30px;
+    color: var(--primary);
+    text-align: justify;
+    align-content: flex-start;
+}
+  
+.timeline-title {
+    background: linear-gradient(to right top, var(--highlight-pink), var(--primary));;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+  
+.timeline-title2 {
+    background: linear-gradient(to right top, #87d5c0, #77d6aa, #76d68a, #83d363, #9acd32);;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+}
+
+.timeline-title3 {
+    background-image: linear-gradient(to right top, #f9f87f, #fad46b, #f4b160, #e6905d, #d1725c);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 18px;
+    letter-spacing: 1.1px;
 }
   
 .timeline-subtitle {
@@ -207,37 +272,10 @@
     border-radius: 50%;
     text-align: center;
     font-size: 2rem;
-    background: #00A985;
-}
-  
-  /* NetSci Timeline*/
-.timeline-netsci {
-    position: absolute;
-    left: -88px;
-    top: 4px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #9acd32, #b3d845, #cce258, #e3ed6b, #f9f87f);
-}
-  
-  /* PET Timeline*/
-.timeline-pet {
-    position: absolute;
-    left: -88px;
-    top: 4px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
     background-image: linear-gradient(to right top, #87d5c0, #77d6aa, #76d68a, #83d363, #9acd32);
 }
   
-  /* First Timeline*/
-.timeline-first {
+.timeline-current2 {
     position: absolute;
     left: -88px;
     top: 4px;
@@ -245,76 +283,12 @@
     height: 50px;
     border-radius: 50%;
     text-align: center;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #E2ADF2, #aea9ba, #a9bad5, #97cde7, #95f2d9, #87d5c0);
+    font-size: 1.5rem;
+    background-image: linear-gradient(to right top, #f9f87f, #fad46b, #f4b160, #e6905d, #d1725c);
 }
 
-.rtext{
-    padding:100px;
-  }
-  
-.rtext p{
-    font-family: Roboto Mono;
-    line-height: 30px;
-    color: var(--primary);
-    text-align: justify;
-    align-content: flex-start;
-}
-  
-.timeline-title {
-    background: linear-gradient(to right top, #87d5c0, #77d6aa, #76d68a, #83d363, #9acd32);;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Roboto;
-    font-size: 18px;
-    letter-spacing: 1.1px;
-   }
-  
-   .timeline-title2 {
-    background: linear-gradient(to right top, #f9f87f, #fad46b, #f4b160, #e6905d, #d1725c);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: Roboto;
-    font-size: 18px;
-    letter-spacing: 1.1px;
-   }
-  
-  .timeline-subtitle {
-    font-weight: 300;
-    font-style: italic;
-    opacity: .4;
-    margin-top: 16px;
-    font-size: 11px;
-    color: var(--main-text);
-  }
-  
-  /* Current Timeline*/
-  
-  .timeline-current {
-    position: absolute;
-    left: -88px;
-    top: 4px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #87d5c0, #77d6aa, #76d68a, #83d363, #9acd32);
-  }
-  
-  .timeline-current2 {
-    position: absolute;
-    left: -88px;
-    top: 4px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    font-size: 2rem;
-    background-image: linear-gradient(to right top, #f9f87f, #fad46b, #f4b160, #e6905d, #d1725c);
-  }
+
+
     
 
 
