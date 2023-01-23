@@ -155,6 +155,10 @@ u::before {
   overflow: hidden;
 }
 
+.navbar{
+  box-shadow: 10px -20px 30px 3px var(--bg-color);
+}
+
 .navbar-brand{
   margin: 0px 2vh;
   font-family: Dongle;
