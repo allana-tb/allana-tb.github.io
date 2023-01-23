@@ -606,10 +606,12 @@ p{
 
 .modal-content {
   background-color: #fefefe;
-  margin: 15% auto; 
+  margin: 35% auto; 
   padding: 20px;
   border: 1px solid #888;
   width: 80%; 
+  border-radius: 10px;
+  z-index: 5000;
 }
 
 .close {
@@ -621,11 +623,16 @@ p{
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #0F061D;
   text-decoration: none;
   cursor: pointer;
 }
 
+.thankyou_message h2{
+  font-family: Roboto;
+  color: #0F061D;
+  padding: 10px;
+}
 
 
 
