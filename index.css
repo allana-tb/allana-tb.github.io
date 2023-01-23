@@ -16,8 +16,8 @@
   --highlight-pink: #e540ae;
   --container-color-light: #d2c59d;
   --linkedin-color: #00a0dc;
-  --bt-icon: url("moon-stars-fill.svg");
-  
+  --form-low:#666;
+  --form-main: #ddd;  
 }
 
 [color-scheme = "light"]{
@@ -35,7 +35,8 @@
   --container-color-light: #d2c59d;
   --container-color-dark: rgba(30, 13, 58, 0.726);
   --linkedin-color: #0077b5;
-  --bt-icon: url("sun-fill.svg");
+  --form-low:#c7b786;
+  --form-main: #1a1a1a;
 }
 
 html{
@@ -119,7 +120,7 @@ u::before {
 }
 
 #github:hover{
-  color: #8679A9;
+  color: #7911cd;
 }
 
 #linkedin:hover{
@@ -225,6 +226,8 @@ u::before {
   z-index: 1000;
 }
 
+
+
 .checkbox {
   height: 25px;
   width: 25px;
@@ -243,7 +246,7 @@ u::before {
 }
 
 .checkbox:hover{
-  background-color: var(--cold-text);
+  background-color: #BEB7D1;
 }
 
 .icons{
@@ -476,6 +479,7 @@ p{
 
 #research-tt{
   text-align: start;
+  scroll-margin: 150px 0px 0px 50px;
 }
 
 #research-tt u::before{
@@ -497,8 +501,126 @@ p{
   color: var(--bg-color) ;
 }
 
+/*==================== WORK ====================================*/
 
+#contact{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 5vh;
+}
 
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: var(--cold-text);
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+
+.icon{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 117px;
+  height: 4px;
+  background: var(--cold-text);
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+  min-height: 50px;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+  padding-top: 2vh;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--form-low);
+  color: var(--form-main);
+  font-size: 14px;
+  font-family: Roboto Mono;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: var(--form-low);
+}
+
+.app-form-control:focus {
+  border-bottom-color: var(--form-main);
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: var(--form-main);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: #9581EB;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  border-radius: 10px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+}
+
+.close {
+  color: #9581EB;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 

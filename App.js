@@ -61,7 +61,7 @@ var p = tsParticles.load('particles-js', {
         }
       },
       color: {
-        value: '#fffade'
+        value: '#9581EB'
       },
       shape: {
         type: 'circle',
@@ -96,7 +96,7 @@ var p = tsParticles.load('particles-js', {
       lineLinked: {
         enable: true,
         distance: 100,
-        color: '#beb7d1',
+        color: '#9581EB',
         opacity: 0.4,
         width: 1
       },
@@ -157,3 +157,25 @@ var p = tsParticles.load('particles-js', {
     },
     detectsRetina: true,
 });
+
+
+var modal = document.getElementById("thanks-modal");
+
+var btn = document.getElementById("thanks");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+

@@ -159,7 +159,7 @@
                 <h2 class="text-page">My work</h2>
                 <p class="subtext">As this banner so subtly sugests,
                     one of my areas of interest is Network Science.</p>
-                <a href="#research" class="scroll-down" address="true"></a>                           
+                <a href="#research-tt" class="scroll-down" address="true"></a>                           
             </div>
         </div>
 
@@ -236,7 +236,7 @@
                         <div class="timeline-current2"></div>
                         <div class="timeline-body">
                             <h4 class="timeline-title3"><span class="badge"> Data Science Intern @ RD</span></h4>
-                            <p> 04/2022 - 07/2022 </p>
+                            <p> 04/2022 - 08/2022 </p>
                             <ul>
                                 <li> <p> Developed implicit recommendation system for product pages, based on product's category </li>
                                 <p>
@@ -293,7 +293,46 @@
         </div>
     </section>
 
-        
+    <section id="contact">
+        <h2>Leave a message!</h2>
+        <div class="screen-body-item">
+            <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" 
+            action="https://script.google.com/macros/s/AKfycbzt3SntANyCx1XLuNepEirbZfwceOy5Ox366sj1SKX93ZVEGJVBGQXFAkTRPZAZjJ9IeA/exec">
+            <div class="form-col">
+                <div class="form-elements">
+                <input class="app-form-control" placeholder="YOUR NAME" name="name" id="name" type="text">
+              </div>
+              <div class="form-elements">
+                <input class="app-form-control" placeholder="YOUR EMAIL" name="email" id="email" type="email">
+              </div>
+            </div>
+
+            <div class="form-col">
+              <div class="form-elements">
+                <textarea class="app-form-control" placeholder="Write something here..." name="message" id="messsage" type="text"></textarea>
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button" onclick="history.back()">CANCEL</button>
+                <button class="app-form-button" type="submit" name="submit" value="send" id="thanks">SEND</button>
+              </div>
+            </div>
+
+            <div id="thanks-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="thankyou_message">
+                        <h2>Thanks for the message!
+                          I will get back to you soon! :) </h2>
+                    </div>
+                </div>
+            </div>
+            </form>
+
+            <!-- Submit the Form to Google Using "AJAX" -->
+            <script data-cfasync="false" src="JS/form-submission-handler.js"></script>
+
+    </section>
+
     </div>
 </body>
 <script src="App.js"></script>
