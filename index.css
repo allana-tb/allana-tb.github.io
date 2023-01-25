@@ -87,7 +87,6 @@ body {
 
 section{
   padding: 10vh;
-  padding-top: 15vh;
 }
 
 h2{
@@ -117,6 +116,10 @@ u::before {
 
 .icons a{
   color: #9581EB;
+}
+
+#cv:hover{
+  color: var(--highlight-pink);
 }
 
 #github:hover{
@@ -258,9 +261,8 @@ u::before {
   position:-webkit-sticky;
   z-index: 500;
   width: fit-content;
-  top: 70%;
+  top: 65%;
 }
-
 
 /* =========================================INTRO======================================= */
 
@@ -358,6 +360,10 @@ p{
 }
 
 /*==================== ABOUT ME====================================*/
+
+#about{
+  scroll-margin: 100px 0px 0px 50px;
+}
 
 #about-tt{
   text-align: end;
@@ -492,6 +498,10 @@ p{
 
 
 /*==================== WORK ====================================*/
+
+#my-work{
+  scroll-margin: 100px 0px 0px 50px;
+}
 
 #work-tt{
   text-align: end;
