@@ -145,7 +145,7 @@ u::before {
 /* ===========================NAV============================ */
 
 .navbar {
-	background: var(--bg-shadow);
+	background: var(--bg-color);
   border-radius: 10px;
   z-index: 500;
   box-shadow: var(--shadows);
