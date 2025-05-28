@@ -39,15 +39,17 @@
   --form-main: #1a1a1a;
 }
 
-html{
+html, body {
   scroll-behavior: smooth;
+}
+
+html{
   background: #9581EB;
-  height: 100%;
-  overflow: hidden;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding-bottom: 6vh;
+  overflow: hidden;
 }
 
 body {
@@ -72,6 +74,12 @@ body {
   overflow-y: scroll;
 }
 
+.frame {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
 ::-webkit-scrollbar-track {
   background: none;
 }
@@ -87,6 +95,9 @@ body {
 
 section{
   padding: 10vh;
+  min-height: 95vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 
 h2{
@@ -142,6 +153,10 @@ u::before {
   color: var(--highlight-orange);
 }
 
+#scholar:hover{
+  color: #4338a7;
+}
+
 /* ===========================NAV============================ */
 
 .navbar {
@@ -171,7 +186,7 @@ u::before {
 .nav-link {
   padding-left: 10px;
   font-family: Dongle;
-  font-size: 30px;
+  font-size: 2rem;
 
 }
 
@@ -256,13 +271,20 @@ u::before {
   background-color: #BEB7D1;
 }
 
-.icons{
-  position: sticky;
-  position:-webkit-sticky;
+.icons {
+  position: fixed;
+  bottom: 2vh;
+  left: 2vw;
   z-index: 500;
-  width: fit-content;
-  top: 65%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+
+
+  font-size: clamp(1rem, 0.5vw, 1rem); /* Responsive scaling */
 }
+
 
 /* =========================================INTRO======================================= */
 
@@ -283,26 +305,43 @@ p{
   color: var(--primary);
 }
 
+.container-fluid.home > .row,
+.container-fluid.home > .inner-content {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+}
+
+
 #home{
   display: flex;
   flex-wrap: wrap;
   -ms-flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
-  padding-bottom: 30vh;
+  width: 100%;
 }
 
 .home-text{
-  flex: 60%;
+  flex: 1 1 50%;
   align-content: center;
 }
 
 .home-img{
-  flex: 40%;
+  flex: 1 1 40%;
+
 }
 
 @media screen and (max-width: 700) {
   #home{
     flex-direction: column;
+    padding-bottom: 5vh;
+  }
+
+  .home-text, .home-img {
+    flex: 1 1 100%;
+    text-align: center;
   }
 }
 
@@ -528,7 +567,7 @@ p{
   flex-direction: column;
   position: relative;
   color: var(--cold-text);
-  font-size: 26px;
+  font-size: 5rem;
   padding-bottom: 5px;
 }
 

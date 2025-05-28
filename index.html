@@ -49,13 +49,15 @@
         </ul>
     </nav>
 
-    <div id="nets" class="icons" style="font-size:x-large; line-height: 140%; ">
+    <div id="nets" class="icons" style="font-size:x-large; line-height: 100%; ">
         <a id = "cv" href="CV.pdf" target="_blank"><i class="bi bi-file-earmark-person-fill"></i></a><br>
         <a id = "github" href="https://github.com/allana-tb" target="_blank"><i class="bi bi-github"></i></a><br>
         <a id = "linkedin" href="https://www.linkedin.com/in/allanatavares/" target="_blank"><i class="bi bi-linkedin"></i></a><br>
         <a id = "twitter" href="https://twitter.com/allana_tb" target="_blank"><i class="bi bi-twitter"></i></a><br>
         <a id = "mastodon" href="https://mathstodon.xyz/@allana" target="_blank"><i class="bi bi-mastodon"></i></a><br>
         <a id = "email" href="mailto:allanatavaresb@gmail.com" target="_blank"><i class="bi bi-envelope-fill"></i></a><br>
+        <a id = "scholar" href="https://scholar.google.com/citations?user=1bIzKHUAAAAJ" target="_blank"><i class="bi bi-mortarboard-fill"></i></a><br>
+          
     </div>
 
     <div class="container-fluid home" id="top">
@@ -76,20 +78,21 @@
 
     <section class="container-fluid" id="about">
         <h2 id="about-tt"><u>About me</u></h2>
-        <p> I’m a Masters student in Computer Science at UFMG. 
-             My main research interests are Complex Systems, Optimization 
-             and Social Computing! <br> <br>
+        <p> I’m a PhD candidate in Computer Science at UFMG, advised by Dr. Martín Ravetti. I'm a 
+            member of Future Lab and LAPO (Laboratory of Operational Research). 
+            My main research interests are Complex Systems, Optimization 
+            and Machine Learning! <br> <br>
 
             I’ve always really liked Maths, Humanities and interdisciplinary
              topics. Because of that, I became a bachelor in Administration. 
              During my graduation, though, I had the opportunity to be a 
              junior research fellow in Network Science, applying it in a 
              real-world bidding processes.  That lead me to also discover 
-             programming, starting with R. But that was it, I was absolutely
-              hooked! <br><br>
+             programming, starting with R. But that was it, I was absolutely 
+             hooked! <br><br>
             
             During my free time, I'm usually reading or watching
-             something - and sometimes baking. <br>
+             something - and sometimes baking (which is 70% math, 10% your oven and 20% luck). <br>
              <br>
             Feel free to find me on my socials or message me <a href="#contact" style="color: inherit;">here!</a></p>
         <p></p>
@@ -102,7 +105,7 @@
                 <div class="subsection"> Languages, Libraries & Frameworks</div>
                 <ul>
                     <li>Python: Pandas, NumPy, Matplotlib, SeaBorn, Sci-kit Learn,
-                        NetworkX, PyTorch, TensorFlow, Kedro </li>
+                        NetworkX, PyTorch, TensorFlow, Kedro, dgl </li>
                     <li>R: tidyverse, igraph, Shiny </li>
                     <li>SQL: MySQL, DBeaver </li>
                     <li>C#: Asp.Net</li>
@@ -119,6 +122,7 @@
                     <li> Git, GitHub, GitLab </li>
                     <li> Databases </li>
                     <li> Amazon Web Services (Athena, Redshift)</li>
+                    <li> K8s </li>
                 </ul>
                 <br>
 
@@ -135,7 +139,14 @@
     <section class="container-fluid" id="education">
         <h2 id="education-tt"><u>Education</u></h2>
         <div class="col">
-            <h4 class="timeline-title"><span class="badge">Master's student in Computer Science @ Federal University of Minas Gerais - UFMG </span> </h4> 
+            <h4 class="timeline-title"><span class="badge"> PhD Candidate in Computer Science @ Federal University of Minas Gerais - UFMG </span> </h4> 
+                08/2022 - 12/2024
+                <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false"><i class="bi bi-plus-circle"></i></button>
+                <div class="col__content">
+                    <p> Research interests: Complex Systems, Machine Learning (especially, GNNs and Federated Learning) </p>                             
+                </div> <br>
+
+            <h4 class="timeline-title"><span class="badge">Master's in Computer Science @ Federal University of Minas Gerais - UFMG </span> </h4> 
                 08/2022 - 12/2024
                 <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false"><i class="bi bi-plus-circle"></i></button>
                 <div class="col__content">
@@ -179,15 +190,47 @@
                     <div class="timeline-container current">
                         <div class="timeline-current"></div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title2"><span class="badge">2022-Currently</span></h4>
-                            <p>Master's thesis</p>
+                            <h4 class="timeline-title2"><span class="badge">PhD Candidate @ UFMG</span></h4>
+                            <p> 2025 - 2029 </p>
+                            <p> First Year :) </p>
+                
+                        </div>
+                    </div>
+                    <div class="timeline-container current">
+                        <div class="timeline-current"></div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title2"><span class="badge"> Research Fellow - UFMG @ Future Lab</span></h4>
+                            <p> 2022-2024 </p>
+                            <p> Federated Learning - Project Mover</p>
+                            <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false">
+                                <i class="bi bi-plus-circle"></i></button>
+                                <div class="col__content">
+                                    <li> Researched federated applications on urban mobility</li>
+                                    <li> Published a technical paper about Flautim at 2024 WebMedia and presented a demo at the same event</li>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="timeline-container current">
+                        <div class="timeline-current"></div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title2"><span class="badge">Master's research</span></h4>
+                            <p> 2022 - 2024 </p>
+                            <p> "Diversity-Aware Graphormer: Insights from Hate Speech Detection on 4chan"</p>
+                            <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false">
+                                <i class="bi bi-plus-circle"></i></button>
+                                <div class="col__content">
+                                    <li> Research on the intersection of ML on graphs and Network Science, resulting on my thesis with applications
+                                        on hate speech and suicidal ideation detection - repository link to come
+                                    </li>
+                                    <li> Presented paper at 2025 IEEE ICC, at Montreal </li>
+                                </div>
                         </div>
                     </div>
                     <div class="timeline-container netsci">
                         <div class="timeline-current"></div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title2"><span class="badge">2020-2021</span></h4>
-                            <p> Research Fellow - UFMG</p>
+                            <h4 class="timeline-title2"><span class="badge"> Research Fellow @ UFMG</span></h4>
+                            <p> 2020-2021 </p>
                             <p>Network Science research</p>
                             <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false">
                                 <i class="bi bi-plus-circle"></i></button>
@@ -205,8 +248,8 @@
                     <div class="timeline-container pet">
                         <div class="timeline-current"></div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title2"><span class="badge">2017-2019</span></h4>
-                            <p>Research fellow - PET Administration</p>
+                            <h4 class="timeline-title2"><span class="badge">Research fellow @ PET Administration</span></h4>
+                            <p>2017-2019</p>
                                 <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false">
                                     <i class="bi bi-plus-circle"></i></button>
                                 <div class="col__content">
@@ -222,13 +265,13 @@
                     <div class="timeline-container first">
                         <div class="timeline-current"></div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title2"><span class="badge">2015-2016</span></h4>
-                            <p>Junior Research Fellow in Maths </p> 
+                            <h4 class="timeline-title2"><span class="badge">Junior Research Fellow in Maths</span></h4>
+                            <p> 2015-2016 </p> 
                             <p>Research on Enumerability and Infinity</p>
                             <button type="button" data-toggle="collapse" class="collapsible" aria-expanded="false">
                                 <i class="bi bi-plus-circle"></i></button>
                                 <div class="col__content">
-                                    <li> Worked on Enumerability and its relation to Infinities. </li>                                
+                                Studied Enumerability and its relation to Infinities and presented my work at a regional symposium                                 
                             </div>
                         </div>
                     </div>
@@ -240,6 +283,23 @@
             <h2 id="work-tt"><u>Work experience</u></h2>
             <div class="tcontainer"> 
                 <div class="timeline">
+                    <div class="timeline-container future lab">
+                        <div class="timeline-current2"></div>
+                        <div class="timeline-body">
+                            <h4 class="timeline-title3"><span class="badge"> Research Staff and Developer @ Future Lab</span></h4>
+                            <p> 04/2023 - current </p>
+                            <ul>
+                                <li> <p> Elicited requirements and developed the backend and API of Flautim, a cloud machine learning platform for
+                                    Federated Learning </li>
+                                <p>
+                                <li><p> Tested the platform with federated and "unfederated" machine learning projects </li>
+                                <p>
+                                <li><p> Helped organize the platform's tutorials </li>
+                                <p>
+                                <li> <p>Tech Stack: Python | MongoDB | Kubernetes | GitHub </li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="timeline-container rd">
                         <div class="timeline-current2"></div>
                         <div class="timeline-body">
