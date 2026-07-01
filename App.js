@@ -66,10 +66,25 @@ for (i = 0; i < coll.length; i++) {
     });
 }
 
-tsParticles.loadJSON('particles-js', 'JS/particles.json').then(function(p) {
-  // p is the loaded container, for using it later
-  console.log('callback - particles.js config loaded');
-});
+// Reveal timeline entries as they scroll into view
+if ("IntersectionObserver" in window) {
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { root: document.querySelector(".body-wrap"), threshold: 0.15 });
+
+  document.querySelectorAll(".timeline-container").forEach(function (el) {
+    revealObserver.observe(el);
+  });
+} else {
+  document.querySelectorAll(".timeline-container").forEach(function (el) {
+    el.classList.add("in-view");
+  });
+}
 
 var p = tsParticles.load('particles-js', { 
   fpsLimit: 65,
