@@ -218,6 +218,12 @@ u::before {
   padding: 10px;
 }
 
+@media screen and (max-width: 700px) {
+  .nav-secondary {
+    display: none;
+  }
+}
+
 .nav-checkbox {
   padding-top: 0vw;
   padding-bottom: 0vw;

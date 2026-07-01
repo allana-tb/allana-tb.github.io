@@ -1,5 +1,4 @@
 (function () {
-  // TODO: replace with your real ORCID iD (e.g. "0000-0002-1825-0097")
   var ORCID_ID = "0000-0003-1710-5469";
   var MAX_PUBLICATIONS = 5;
   var container = document.getElementById("pub-list");
@@ -72,6 +71,7 @@
         var a = document.createElement("a");
         a.href = link;
         a.target = "_blank";
+        a.rel = "noopener noreferrer";
         a.style.color = "inherit";
         a.textContent = titleText;
         titleEl.appendChild(a);

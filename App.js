@@ -1,20 +1,41 @@
 var toggleSwitch = document.querySelector(".checkbox");
 
+// Fires a GA4 custom event if gtag loaded successfully (e.g. not ad-blocked)
+function trackEvent(name, params) {
+  if (typeof gtag === "function") {
+    gtag("event", name, params || {});
+  }
+}
+
 function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("color-scheme", "light");
     /*If required*/
     document.body.classList.add("light-mode");
     document.body.classList.remove("dark-mode");
+    trackEvent("theme_toggle", { theme: "light" });
   } else {
     document.documentElement.setAttribute("color-scheme", "dark");
     /*If required*/
     document.body.classList.add("dark-mode");
     document.body.classList.remove("light-mode");
+    trackEvent("theme_toggle", { theme: "dark" });
   }
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
+
+// Track outbound clicks on the CV / socials column
+var netsList = document.getElementById("nets");
+if (netsList) {
+  netsList.addEventListener("click", function (e) {
+    var link = e.target.closest("a");
+    if (!link || !link.id) return;
+    trackEvent(link.id === "cv" ? "cv_download" : "social_click", {
+      link_id: link.id
+    });
+  });
+}
 
 
 const checkbox = document.getElementById("checkbox");
@@ -178,4 +199,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
