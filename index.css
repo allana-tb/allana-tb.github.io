@@ -43,6 +43,10 @@ html, body {
   scroll-behavior: smooth;
 }
 
+/* .body-wrap is the actual scrolling element (html/body are visually
+   locked via overflow:hidden below), so scroll-snap and smooth-scroll
+   behavior need to live there to have any effect */
+
 html{
   background: #9581EB;
   -webkit-box-sizing: border-box;
@@ -72,6 +76,8 @@ body {
   padding: 3vh;
   text-align: center;
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
 }
 
 .frame {
@@ -129,6 +135,13 @@ u::before {
   color: #9581EB;
 }
 
+.icons a svg{
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: -0.125em;
+}
+
 #cv:hover{
   color: var(--highlight-pink);
 }
@@ -155,6 +168,10 @@ u::before {
 
 #scholar:hover{
   color: #4338a7;
+}
+
+#orcid:hover{
+  color: #A6CE39;
 }
 
 /* ===========================NAV============================ */
@@ -333,7 +350,7 @@ p{
 
 }
 
-@media screen and (max-width: 700) {
+@media screen and (max-width: 700px) {
   #home{
     flex-direction: column;
     padding-bottom: 5vh;
@@ -418,9 +435,9 @@ p{
   padding: 4vh;
 }
 
-@media screen and (max-width: 700) {
+@media screen and (max-width: 700px) {
   #about p{
-    padding-left: -100px;
+    padding-left: 0;
     overflow-wrap: break-word;
   }
 }
@@ -452,7 +469,7 @@ p{
   flex: 50%;
 }
 
-@media screen and (max-width: 700) {
+@media screen and (max-width: 700px) {
   #skills .col{
     flex: 100%;
   }
@@ -548,6 +565,58 @@ p{
 
 #work-tt u::before{
   background-color: #f9f87f;
+}
+
+/*==================== PUBLICATIONS ====================================*/
+
+#publications-tt{
+  text-align: start;
+}
+
+#publications-tt u::before{
+  background-color: var(--highlight-blue);
+}
+
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 60vw;
+  margin: 0 auto;
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .pub-list {
+    max-width: 100%;
+  }
+}
+
+.pub-status {
+  text-align: center;
+}
+
+.pub-item {
+  background: var(--bg-shadow);
+  border-radius: 10px;
+  box-shadow: var(--shadows);
+  padding: 16px 20px;
+}
+
+.pub-title {
+  font-family: Roboto;
+  color: var(--main-text);
+  font-size: 1rem;
+  margin: 0 0 6px;
+  line-height: 1.4rem;
+}
+
+.pub-meta {
+  font-family: Roboto Mono;
+  font-size: 13px;
+  color: var(--primary);
+  opacity: .7;
+  margin: 0;
 }
 
 .text-page{
@@ -682,11 +751,3 @@ p{
   color: #0F061D;
   padding: 10px;
 }
-
-
-
-
-
-
-
-

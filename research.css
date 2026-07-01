@@ -196,6 +196,17 @@
     box-shadow: var(--shadows);
     z-index: -1;
 }
+
+@media only screen and (max-width: 700px) {
+    .tl-col{
+        flex: 1 1 100%;
+        padding: 5vw 5vw 5vw 8vw;
+    }
+
+    .timeline-body{
+        max-width: 100%;
+    }
+}
   
   
 .timeline-title {
@@ -289,20 +300,3 @@
     font-size: 1.5rem;
     background-image: linear-gradient(to right top, #f9f87f, #fad46b, #f4b160, #e6905d, #d1725c);
 }
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
